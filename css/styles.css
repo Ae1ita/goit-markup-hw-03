@@ -37,6 +37,9 @@ p {
   padding-right: 15px;
   margin: 0 auto;
 }
+.first.container.main-menu {
+  border-bottom: 1px solid var(--button-border-color);
+}
 .logo {
   display: flex;
 
