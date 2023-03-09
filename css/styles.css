@@ -33,6 +33,12 @@ p {
 .button {
   cursor: pointer;
 }
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
 
 /* Header style */
 .container {
@@ -62,11 +68,7 @@ p {
 }
 
 .logo-accent {
-  display: flex;
   color: var(--button-color);
-}
-.list {
-  list-style: none;
 }
 
 /* Site nav */
@@ -86,16 +88,15 @@ p {
 .site-nav .item + .item {
   margin-left: 40px;
 }
-.site-nav-link {
+.site-nav.link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-decoration: none;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.site-nav.link:hover,
+.site-nav.link:focus {
   color: var(--accent-color);
 }
 
@@ -117,10 +118,9 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5px;
-  text-decoration: none;
 }
-.mailto-link:hover,
-.mailto-link:focus {
+.mailto.link:hover,
+.mailto.link:focus {
   color: var(--accent-color);
 }
 .tel {
@@ -171,8 +171,8 @@ p {
   color: var(--primary-background-color);
   background-color: var(--button-color);
   padding: 16px 32px;
-  min-width: 169px;
-  border: 1px solid transparent;
+
+  border: none;
 }
 .button.primary:hover,
 .button.primary:focus {
